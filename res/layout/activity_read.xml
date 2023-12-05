@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner_login_button"
+        android:src="@drawable/image_upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_corner_black"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoView" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        app:layout_constraintBottom_toBottomOf="@+id/titleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleTextView"
+        app:layout_constraintTop_toTopOf="@+id/titleTextView" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner_black"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionView"
+        app:layout_constraintStart_toStartOf="@+id/descriptionView"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionView" />
+
+    <TextView
+        android:id="@+id/okPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner_black"
+        android:text="판매여부o"
+        app:layout_constraintEnd_toEndOf="@+id/priceView"
+        app:layout_constraintStart_toStartOf="@+id/priceView"
+        app:layout_constraintTop_toBottomOf="@+id/priceView" />
+
+    <Button
+        android:id="@+id/messageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="메시지 보내기"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/okPriceView"
+        app:layout_constraintStart_toStartOf="@+id/okPriceView"
+        app:layout_constraintTop_toBottomOf="@+id/okPriceView" />
+
+ />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
